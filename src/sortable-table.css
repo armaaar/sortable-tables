@@ -2,11 +2,19 @@
 .sortable-table thead th {
   cursor: pointer; }
   .sortable-table thead th:after {
-    font-family: FontAwesome;
     padding-left: 7px; }
   .sortable-table thead th[data-sort-direction="0"]:after {
-    content: ""; }
+    content: "⇕"; }
   .sortable-table thead th[data-sort-direction="1"]:after {
-    content: ""; }
+    content: "▴"; }
   .sortable-table thead th[data-sort-direction="-1"]:after {
-    content: ""; }
+    content: "▾"; }
+
+.sortable-table.sortable-fa-icons thead th:after {
+  font-family: FontAwesome; }
+.sortable-table.sortable-fa-icons thead th[data-sort-direction="0"]:after {
+  content: ""; }
+.sortable-table.sortable-fa-icons thead th[data-sort-direction="1"]:after {
+  content: ""; }
+.sortable-table.sortable-fa-icons thead th[data-sort-direction="-1"]:after {
+  content: ""; }

@@ -1,8 +1,17 @@
 .sortable-table thead th
   cursor: pointer
   &:after
-    font-family: FontAwesome
     padding-left: 7px
+  &[data-sort-direction="0"]:after
+    content: "\21D5"
+  &[data-sort-direction="1"]:after
+    content: "\25B4"
+  &[data-sort-direction="-1"]:after
+    content: "\25BE"
+
+.sortable-table.sortable-fa-icons thead th
+  &:after
+    font-family: FontAwesome
   &[data-sort-direction="0"]:after
     content: "\f0dc"
   &[data-sort-direction="1"]:after
