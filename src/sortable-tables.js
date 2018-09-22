@@ -85,7 +85,7 @@ documentReady(function(){
             return 0;
           }
           else {
-            if(colSortDirection == 1) { // it was up and not it's down
+            if(colSortDirection == 1) { // it was up and now it's down
               return (x > y) ? -1 : 1;
             } else {
               return (x < y) ? -1 : 1;
