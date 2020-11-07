@@ -49,6 +49,8 @@ module.exports = function (grunt) {
         },
     },
 
+    clean: ['tmp'],
+
     concat: {
       js: {
         options: {
@@ -78,7 +80,7 @@ module.exports = function (grunt) {
     watch: {
       styles: {
         files: ['src/**/*.{sass,scss}'],
-        tasks: ['sass', 'autoprefixer', 'cssmin'],
+        tasks: ['sass', 'autoprefixer', 'cssmin', 'clean'],
         options: {
           spawn: false,
         },
@@ -99,6 +101,7 @@ module.exports = function (grunt) {
     'sass',
     'autoprefixer',
     'cssmin',
+    'clean',
     'concat:js',
     'es6transpiler',
     'uglify'
