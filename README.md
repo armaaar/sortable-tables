@@ -1,10 +1,39 @@
 # Sortable Tables Plugin
 Sortable Tables is a vanilla js plugin to turn any `<table>` into a sortable one by just adding one class.
 
-## Requirements
-There is no requirements for this plugin. Just a browser that support javascript ES5
+## Compitability
+This package uses ECMAScript5. You can check [browsers that support ES5](https://caniuse.com/es5).
 
-## How to create a Sortable Table
+## Installation
+There are 2 ways to install this package:
+### NPM / Yarn
+- Install using:
+    ```
+    npm install sortable-tables
+    ```
+    or
+    ```
+    yarn add sortable-tables
+    ```
+- Include scripts either by:
+    ```js
+    import 'sortable-tables/dist/sortable-tables.min';
+    import 'sortable-tables/dist/sortable-tables.min.css';
+    ```
+    ```js
+    require('sortable-tables/dist/sortable-tables.min');
+    require('sortable-tables/dist/sortable-tables.min.css');
+    ```
+    
+### Manually
+- Download both `dist/sortable-tables.min` and `dist/sortable-tables.min.css` files and add them to your project
+- Load both files to your document:
+```html
+<link rel="stylesheet" href="path/to/sortable-tables.min.css">
+<script src="path/to/sortable-tables.min.js" type="text/javascript"></script>
+```
+
+## Usage
 - Add `sortable-tables.js` and `sortable-tables.css` to your page -or their minified versions-.
 - Add the class `scrollbar-outer` to the `<table>` you wanna make sortable.
 - Add a `<thead>` to your table with one `<tr>` and make sure all cell elements in it are `<th>`
