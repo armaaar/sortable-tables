@@ -1,3 +1,4 @@
 #custom ignores
 .*/
 node_modules/
+tmp/
