@@ -95,5 +95,13 @@ module.exports = function (grunt) {
   });
 
   // 3. Where we tell Grunt what to do when we type "grunt" into the terminal.
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('build', [
+    'sass',
+    'autoprefixer',
+    'cssmin',
+    'concat:js',
+    'es6transpiler',
+    'uglify'
+  ]);
+  grunt.registerTask('default', ['build', 'watch']);
 };
