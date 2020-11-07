@@ -1,6 +1,6 @@
 {
   "name": "sortable-tables",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A vanilla js plugin to turn any table into a sortable one by just adding one class",
   "repository": "github:armaaar/sortable-tables",
   "author": "Ahmed Rafik",
