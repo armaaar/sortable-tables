@@ -35,7 +35,7 @@ There are 2 ways to install this package:
 
 ## Usage
 - Add `sortable-tables.js` and `sortable-tables.css` to your page -or their minified versions-.
-- Add the class `scrollbar-outer` to the `<table>` you wanna make sortable.
+- Add the class `sortable-table` to the `<table>` you wanna make sortable.
 - Add a `<thead>` to your table with one `<tr>` and make sure all cell elements in it are `<th>`
 - Add a `<tbody>` to your table and make sure all cell elements in it are `<td>`
 
