@@ -23,7 +23,7 @@
     "grunt-es6-transpiler": "^1.0.2",
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "standard-version": "^9.0.0"
   }
 }
